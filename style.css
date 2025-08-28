@@ -9,14 +9,21 @@ body {
     text-align: center;
     padding: 50px;
   }
-  .my-button {
-    background-color: #c6c6c6;
-    color: rgb(0, 0, 0);
-    padding: 5px 50px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-  }
+
+.my-button {
+  background-color: #c6c6c6;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  margin: 0.25%;
+  font-size: clamp(0.5rem, 2.5vw, 0.75rem);
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
   
   .my-button:hover {
     background-color: #0056b3;
@@ -41,4 +48,13 @@ body {
   background-color: rgb(218, 219, 220);
   border-radius: 10px;
   text-align: left;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  }
+
+.responsive-text {
+  font-size: clamp(1rem, 2.5vw, 2rem);
 }
