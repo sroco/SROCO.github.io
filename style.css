@@ -58,3 +58,22 @@ body {
 .responsive-text {
   font-size: clamp(1rem, 2.5vw, 2rem);
 }
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contenedor img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Para pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column; /* Imagen arriba, texto abajo */
+    text-align: left;
+  }
+}
