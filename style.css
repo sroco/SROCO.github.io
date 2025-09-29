@@ -1,147 +1,136 @@
-/* style.css */
-head{
-  background-color: #f2f2f2;
-  text-align: center;
-}
+/* --------------------
+   ESTILOS GENERALES
+-------------------- */
+
+
 body {
-    font-family: sans-serif;
-    background-color: #f2f2f2;
-    text-align: center;
-    padding: 50px;
-  }
-.subtitle{
-text-align: left;
-}
-.my-button {
-  background-color: #c6c6c6;
-  color: rgb(0, 0, 0);
-  padding: 10px 20px;
-  margin: 0.25%;
-  margin-bottom: 1%;
-  font-size: clamp(0.5rem, 2.5vw, 0.75rem);
-  text-decoration: none;
-  border-radius: 5px;
-  display: inline-block;
-  font-size: 1rem;
-  max-width: 100%;
-  box-sizing: border-box;
+  background: url("mark-lyu-BDIcmo7netA-unsplash.jpg") center/cover no-repeat fixed;
 }
 
-  
-.my-button:hover {
-    background-color: #0056b3;
-}  
-
-.top-right-image {
-    position: absolute; /* or fixed if you want it to stay while scrolling */
-    top: 2.5%;
-    right: 2.5%;
-    width: 180px; /* adjust size as needed */
-    height: auto;
+body::before {
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.269); /* dark overlay */
+  z-index: -1;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .top-right-image {
-    top: 2.5%;
-    right: 2.5%;
-    width: 120px; /* adjust size as needed */
-    height: auto;
-  }
+
+/* Contenedor central */
+.container {
+  margin-left: 10%;
+  margin-right:10%;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(116, 116, 116, 0.479); /* negro translúcido */
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 10%;
+}
+.container2 {
+  margin-left: 10%;
+  margin-right:10%;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.621); /* negro translúcido */
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 10%;
 }
 
-@media (max-width: 480px) {
-  .top-right-image {
-    top: 2.5%;
-    right: 2.5%;
-    width: 80px; /* adjust size as needed */
-    height: auto;
-  }
+/* --------------------
+   TEXTO Y TÍTULOS
+-------------------- */
+h1 {
+  font-size: clamp(20px, 6vw, 50px);
+  margin: 20px 0;
+  color: aliceblue;
+  margin-bottom: 60px; /* more space under title */
 }
 
-.left-image {
-  position: absolute; /* or fixed if you want it to stay while scrolling */
-  left: 6%;
-  width: 200px; /* adjust size as needed */
-  height: auto;
+.subtitle {
+  text-align: left;
 }
-
-.responsive-img {
-  max-width: 100%;
-  height: auto;
-  }
 
 .responsive-text {
   font-size: clamp(1rem, 2.5vw, 2rem);
 }
 
-.contenedor {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.contenedor img {
-  max-width: 100%;
+/* --------------------
+   LOGOS E IMÁGENES
+-------------------- */
+.responsive-img {
+  max-width: 700px;
   height: auto;
 }
 
-/* Para pantallas pequeñas (celulares) */
+.top-right-image {
+  position: absolute;
+  top: 2.5%;
+  right: 2.5%;
+  width: 180px;
+  height: auto;
+}
+
+.left-image {
+  position: absolute;
+  left: 6%;
+  width: 200px;
+  height: auto;
+}
+
+/* Responsivo imágenes */
 @media (max-width: 768px) {
-  .contenedor {
-    flex-direction: column; /* Imagen arriba, texto abajo */
-    text-align: left;
+  .top-right-image {
+    width: 120px;
   }
 }
-
-/* Estilos comunes */
-.fa {
-  display: inline-block;
-  font-size: 24px;
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
-  text-align: center;
-  text-decoration: none;
-  margin: 8px;
-  border-radius: 50%;
-  color: white;
-  transition: 0.3s;
-}
-
-.fa:hover {
-  opacity: 0.8;
-  transform: scale(1.1);
-}
-
-/* Colores por red social */
-.fa-linkedin { background: #007bb5; }
-.fa-youtube  { background: #bb0000; }
-.fa-instagram{ background: #cd1010; }
-.fa-whatsapp { background: #12d225; }
-
-/* Contenedor para alinear */
-.socials {
-  display: flex;
-  justify-content: center; /* centrado horizontal */
-  flex-wrap: wrap; /* en móvil se acomodan en varias filas */
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .fa {
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-  }
-}
-
 @media (max-width: 480px) {
-  .fa {
-    font-size: 18px;
-    width: 36px;
-    height: 36px;
-    line-height: 36px;
+  .top-right-image {
+    width: 80px;
   }
+}
+
+/* --------------------
+   BOTONES
+-------------------- */
+.my-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+  font-size: 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.my-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* --------------------
+   ICONOS SOCIALES
+-------------------- */
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  display: inline-block;
+  font-size: 30px;
+  margin: 0 10px;
+  color: white;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffcc00; /* Amarillo al hover */
+  transform: scale(1.1);
 }
