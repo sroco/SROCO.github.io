@@ -1,47 +1,39 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arquitectura - SR</title>
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- Estilos -->
+  <title>ROCO Arquitectura</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Contenedor principal -->
-  <div class="container">
-    <!-- Logo -->
-    <img src="ROCO - LOGO.png" alt="roco logo" class="responsive-img">
+  <h1>ROCO </h1>
+  <h2>ARQUITECTURA</h2>
 
-    <!-- Título -->
-    <h1>ARQUITECTURA</h1>
+<!-- This is a single-line comment -->
 
-    <!-- Botones -->
-    <nav>
-      <a href="portafolio.html" class="my-button">SR - PORTAFOLIO</a>
-      <a href="BIM.html" class="my-button">REVIT - BIM</a>
-      <a href="obras.html" class="my-button">OBRAS</a>
-      <a href="vivienda bioclimatica.html" class="my-button">VIVIENDA BIOCLIMÁTICA</a>
-      <a href="quienes_somos.html" class="my-button">QUIÉNES SOMOS</a>
-    </nav>
-
-    <!-- Redes sociales -->
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/santiagorodriguezsr" class="fa fa-linkedin" target="_blank"></a>
-      <a href="https://www.youtube.com/@santiagorodriguezrodriguez3704" class="fa fa-youtube" target="_blank"></a>
-      <a href="https://www.instagram.com/sr_roco" class="fa fa-instagram" target="_blank"></a>
-      <a href="https://wa.me/573005797989" class="fa fa-whatsapp"></a>
-    </div>
+  <div class="menu">
+    <button onclick="showSection('portfolio')">Portfolio</button>
+    <button onclick="showSection('revit')">Revit - BIM</button>
+    <!-- <button onclick="showSection('obras')">Obras</button>-->
+     <button onclick="showSection('Dynamo - Python - C#')">Dynamo - Python - C#</button>
+    <button onclick="showSection('bioclimatic')">Vivienda Bioclimática</button>
+    <!-- button onclick="showSection('about')">Quiénes Somos</button>-->
+    <button onclick="showSection('home')">home</button>
   </div>
 
+  <!-- Content container -->
+  <div id="content" class="content"></div>
+
+<!--Photo by <a href="https://unsplash.com/@nizamphotographs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nizam Photographs</a> on <a href="https://unsplash.com/photos/a-bird-flying-through-a-blue-cloudy-sky-x4hmbIFivDw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>-->
+<!--Photo by <a href="https://unsplash.com/@nizamphotographs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nizam Photographs</a> on <a href="https://unsplash.com/photos/a-bird-flying-through-a-blue-cloudy-sky-x4hmbIFivDw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>-->
+
   <script src="script.js"></script>
+
+  <script>
+    // Load home by default when page first loads
+    document.addEventListener("DOMContentLoaded", () => {
+      showSection('home');
+    });
 </body>
-
-<!-- Photo by <a href="https://unsplash.com/@mark410?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mark LYU</a> on <a href="https://unsplash.com/photos/green-leaf-BDIcmo7netA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>-->
-
 </html>
