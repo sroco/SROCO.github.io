@@ -5,13 +5,7 @@ function showSection(section) {
   switch(section) {
 
     case 'home':
-      body.style.background = "url('mark-lyu-BDIcmo7netA-unsplash.jpg') no-repeat center/cover";
-      content.innerHTML = `
-      <h2>About me - Santiago Rodríguez</h2>
-      <img src="selfie.jpeg" alt="Selfie of Santiago Rodríguez" class="profile-img">
-      <p>I'm an Architect based in Colombia with over 3 years experience in different fields within 
-      the AEC industry.Lately I've been working for a company in the US which is foucused in the </p> 
-      `;
+      body.style.background = "url('mark-lyu-BDIcmo7netA-unsplash.jpg')no-repeat center/cover";
       break;
 
     case 'portfolio':
@@ -29,17 +23,25 @@ function showSection(section) {
       `;
       break;
 
-    case 'revit':
-      body.style.background = "white";
+          case 'store':
+      body.style.background = "#508609";
       content.innerHTML = `
         <h2>Revit - BIM</h2>
         <p>Our expertise in Building Information Modeling (BIM) allows for precision, collaboration, and efficiency.</p>
-        <img src="https://picsum.photos/id/1050/800/400" alt="Revit project">
+        <img src="url('blueprint.jpg')" alt="Revit project">
+      `;
+
+    case 'revit':
+      body.style.background = "#4078f1";
+      content.innerHTML = `
+        <h2>Revit - BIM</h2>
+        <p>Our expertise in Building Information Modeling (BIM) allows for precision, collaboration, and efficiency.</p>
+        <img src="url('blueprint.jpg')" alt="Revit project">
       `;
       break;
 
     case 'obras':
-      body.style.background = "url('https://picsum.photos/id/1003/1600/900') no-repeat center/cover";
+      body.style.background = "#525ff2') no-repeat center/cover";
       content.innerHTML = `
         <h2>Obras</h2>
         <p>From design to execution, our works reflect commitment and quality in construction.</p>
@@ -47,23 +49,23 @@ function showSection(section) {
       `;
       break;
 
-      case 'Dynamo - Python - C#':
-      body.style.background = "url('https://picsum.photos/id/1003/1600/900') no-repeat center/cover";
+      case 'Dynamo - PyRevit - C#':
+      body.style.background = "#52e5f2";
       content.innerHTML = `
         <h2>Dynamo</h2>
         <p>From design to execution, our works reflect commitment and quality in construction.</p>
         <img src="https://picsum.photos/id/1067/800/400" alt="Construction work">
         <h2>Python</h2>
-        <p>From design to execution, our works reflect commitment and quality in construction.</p>
+        <p>From design to execution, our works reflect commitment and quality in Sconstruction.</p>
         <img src="https://picsum.photos/id/1067/800/400" alt="Construction work">
         <h2>C#</h2>
         <p>From design to execution, our works reflect commitment and quality in construction.</p>
-        <img src="https://picsum.photos/id/1067/800/400" alt="Construction work">
+        <img src= "https://picsum.photos/id/1067/800/400" alt="Revit project">
       `;
       break;
 
     case 'bioclimatic':
-      body.style.background = "url('nizam-photographs-x4hmbIFivDw-unsplash.jpg') no-repeat center/cover";
+      body.style.background = "#5ff252";
       content.innerHTML = `
         <h2>Vivienda Bioclimática</h2>
         <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
@@ -71,12 +73,22 @@ function showSection(section) {
       `;
       break;
 
-    case 'about':
-      body.style.background = "url('https://picsum.photos/id/1035/1600/900') no-repeat center/cover";
+    case 'about me':
+
+      body.style.background = "#52C5F2";
       content.innerHTML = `
-        <h2>Quiénes Somos</h2>
-        <p>ROCO Arquitectura es un equipo apasionado por el diseño, la innovación y la sostenibilidad.</p>
-        <img src="https://picsum.photos/id/1080/800/400" alt="Team photo">
+      <h2>About me - Santiago Rodríguez</h2>
+      <img src="selfie.jpeg" alt="Selfie of Santiago Rodríguez" class="profile-img">
+      <p>Architect based in Colombia with over 3 years experience in different fields within 
+      the AEC industry and BIM specialist with 5 years of experience delivering residential, healthcare, and hospitality projects. Proficient in BIM 
+      coordination and documentation using Revit, Dynamo, and Navisworks, with additional experience in Python for workflow automation 
+      and model management. Skilled in multidisciplinary coordination, model QA/QC, and production of construction documentation within 
+      collaborative environments. </p> 
+
+      <p>Experienced working on architectural projects in the United States and Canada, supporting consultant coordination and design 
+      development across project phases.
+      </p> 
+      <img src= "url('wall-with-green-squares.jpg')" alt="Revit project">
       `;
       break;
     
