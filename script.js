@@ -11,6 +11,18 @@ function showSection(section) {
     case 'portfolio':
       body.style.background = "#52C5F2";
       content.innerHTML = `
+        <h2>About me - Santiago Rodríguez</h2>
+        <img src="selfie.jpeg" alt="Selfie of Santiago Rodríguez" class="profile-img">
+        <p>Architect based in Colombia with over 3 years experience in different fields within 
+        the AEC industry and BIM specialist with 5 years of experience delivering residential, healthcare, and hospitality projects. Proficient in BIM 
+        coordination and documentation using Revit, Dynamo, and Navisworks, with additional experience in Python for workflow automation 
+        and model management. Skilled in multidisciplinary coordination, model QA/QC, and production of construction documentation within 
+        collaborative environments. </p> 
+
+        <p>Experienced working on architectural projects in the United States and Canada, supporting consultant coordination and design 
+        development across project phases.
+        </p> 
+
         <h2>Casa Fátima</h2>
         <p>Explore our selected projects showcasing innovation, design, and sustainability.</p>
         <img src="FÁTIMA_1.png" alt="Portfolio project">
@@ -30,7 +42,8 @@ function showSection(section) {
         <p>Our expertise in Building Information Modeling (BIM) allows for precision, collaboration, and efficiency.</p>
         <img src="url('blueprint.jpg')" alt="Revit project">
       `;
-
+      break;
+      
     case 'revit':
       body.style.background = "#4078f1";
       content.innerHTML = `
@@ -77,17 +90,7 @@ function showSection(section) {
 
       body.style.background = "#52C5F2";
       content.innerHTML = `
-      <h2>About me - Santiago Rodríguez</h2>
-      <img src="selfie.jpeg" alt="Selfie of Santiago Rodríguez" class="profile-img">
-      <p>Architect based in Colombia with over 3 years experience in different fields within 
-      the AEC industry and BIM specialist with 5 years of experience delivering residential, healthcare, and hospitality projects. Proficient in BIM 
-      coordination and documentation using Revit, Dynamo, and Navisworks, with additional experience in Python for workflow automation 
-      and model management. Skilled in multidisciplinary coordination, model QA/QC, and production of construction documentation within 
-      collaborative environments. </p> 
 
-      <p>Experienced working on architectural projects in the United States and Canada, supporting consultant coordination and design 
-      development across project phases.
-      </p> 
       <img src= "url('wall-with-green-squares.jpg')" alt="Revit project">
       `;
       break;
