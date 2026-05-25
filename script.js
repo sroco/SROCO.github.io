@@ -5,7 +5,8 @@ function showSection(section) {
   switch(section) {
 
     case 'home':
-      body.style.background = "url('mark-lyu-BDIcmo7netA-unsplash.jpg')no-repeat center/cover";
+      body.style.background = "url('mark-lyu-BDIcmo7netA-unsplash.jpg') no-repeat center/cover";
+      content.innerHTML = ""
       break;
 
     case 'portfolio':
@@ -40,7 +41,7 @@ function showSection(section) {
       content.innerHTML = `
         <h2>Revit - BIM</h2>
         <p>Our expertise in Building Information Modeling (BIM) allows for precision, collaboration, and efficiency.</p>
-        <img src="url('blueprint.jpg')" alt="Revit project">
+        <img src="blueprint.jpg" alt="Revit project">
       `;
       break;
       
@@ -49,12 +50,12 @@ function showSection(section) {
       content.innerHTML = `
         <h2>Revit - BIM</h2>
         <p>Our expertise in Building Information Modeling (BIM) allows for precision, collaboration, and efficiency.</p>
-        <img src="url('blueprint.jpg')" alt="Revit project">
+        <img src="blueprint.jpg" alt="Revit project">
       `;
       break;
 
     case 'obras':
-      body.style.background = "#525ff2') no-repeat center/cover";
+      body.style.background = "#525ff2";
       content.innerHTML = `
         <h2>Obras</h2>
         <p>From design to execution, our works reflect commitment and quality in construction.</p>
@@ -83,15 +84,6 @@ function showSection(section) {
         <h2>Vivienda Bioclimática</h2>
         <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
         <img src="PSICOMETRIC-CHART.jpeg" alt="Bioclimatic house">
-      `;
-      break;
-
-    case 'about me':
-
-      body.style.background = "#52C5F2";
-      content.innerHTML = `
-
-      <img src= "url('wall-with-green-squares.jpg')" alt="Revit project">
       `;
       break;
     
