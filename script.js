@@ -63,18 +63,27 @@ function showSection(section) {
       `;
       break;
 
-      case 'Dynamo - PyRevit - C#':
+      case 'PyRevit - Store':
       body.style.background = "#52e5f2";
       content.innerHTML = `
-        <h2>Dynamo</h2>
-        <p>From design to execution, our works reflect commitment and quality in construction.</p>
-        <img src="https://picsum.photos/id/1067/800/400" alt="Construction work">
-        <h2>Python</h2>
-        <p>From design to execution, our works reflect commitment and quality in Sconstruction.</p>
-        <img src="https://picsum.photos/id/1067/800/400" alt="Construction work">
-        <h2>C#</h2>
-        <p>From design to execution, our works reflect commitment and quality in construction.</p>
-        <img src= "https://picsum.photos/id/1067/800/400" alt="Revit project">
+        <h2>Transform any view type into a drafting view</h2>
+        <p></p>
+        <img src="Diapositiva1.JPG" alt="Construction work">
+        <p></p>
+        <h2>BUY</h2>
+        <p></p>
+        <h2>Set Detail Numbers Automatically In A Single Sheet</h2>
+        <p></p>
+        <img src="Diapositiva2.JPG" alt="Construction work">
+        <p></p>
+        <h2>BUY</h2>
+        <p></p>
+        <h2>Name Elevations Automatically</h2>
+        <p></p>
+        <img src= "Diapositiva3.JPG" alt="Revit project">
+        <p></p>
+        <h2>BUY</h2>
+        <p></p>
       `;
       break;
 
