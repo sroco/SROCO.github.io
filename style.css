@@ -37,6 +37,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s;
+  align-self: center;
 }
 
 .menu button:hover {
@@ -67,4 +68,44 @@ h1 {
   max-width: 100%;
   border-radius: 10px;
   margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  text-align: left;
+  display:block;
+}
+
+textarea {
+  width: 100%;
+  padding-bottom: 250px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  text-align: left;
+  resize:none;
+  display:block;
+}
+
+label {
+  width: 100;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display:block;
+}
+
+.market {
+ background: rgba(0,0,0,0.6);
+  border: none;
+  color: #fff;
+  padding: 10px 20%;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  align-self: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 30px;
 }
