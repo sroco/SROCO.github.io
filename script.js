@@ -1,28 +1,31 @@
 function showSection(section) {
   const body = document.body;
   const content = document.getElementById("content");
+  content.style.background = "rgba(0, 0, 0, 0.5)"
 
   switch(section) {
 
     case 'home':
       body.style.background = "url('mark-lyu-BDIcmo7netA-unsplash.jpg') no-repeat center/cover";
+      content.style.background = "#00000000"
       content.innerHTML = ""
       break;
 
     case 'portfolio':
       body.style.background = "#355974";
       content.innerHTML = `
-        <h2>About me - Santiago Rodríguez</h2>
+        <div class = about_me>
+        <h2>Hey there! Let me introduce myself first</h2>
         <img src="selfie.jpeg" alt="Selfie of Santiago Rodríguez" class="profile-img">
-        <p>Architect based in Colombia with over 3 years experience in different fields within 
+        <p>I'm Santiago Rodriguez. An architect based in Colombia with over 5 years experience in different fields within 
         the AEC industry and BIM specialist with 5 years of experience delivering residential, healthcare, and hospitality projects. Proficient in BIM 
         coordination and documentation using Revit, Dynamo, and Navisworks, with additional experience in Python for workflow automation 
         and model management. Skilled in multidisciplinary coordination, model QA/QC, and production of construction documentation within 
-        collaborative environments. self-place = right</p> 
-
+        collaborative environments.</p> 
         <p>Experienced working on architectural projects in the United States and Canada, supporting consultant coordination and design 
         development across project phases.
         </p> 
+        </div>  
 
         <h2>Casa Fátima</h2>
         <p>Explore our selected projects showcasing innovation, design, and sustainability.</p>
@@ -32,7 +35,11 @@ function showSection(section) {
         <img src="ROCO_LOGO_B-T.png" alt="Portfolio project">
         <h2>Conjunto Cova de Iria</h2>
         <p>Explore our selected projects showcasing innovation, design, and sustainability.</p>
-        <img src="ROCO_LOGO_B-T.png" alt="Portfolio project">        
+        <img src="ROCO_LOGO_B-T.png" alt="Portfolio project">
+        <div>
+        <button onclick="showSection('about')" type = "submit" class = "bottom_button">Let's talk!</button>
+        <button onclick="showSection('home')" type = "submit" class = "bottom_button">Home</button>
+        </div>    
       `;
       break;
 
@@ -47,18 +54,25 @@ function showSection(section) {
       <input type = "text" placeholder = "Your name">
       <label>Please give us an email so we can contact you</label>
       <input type = "email" placeholder = "Insert your email">
-      <label>Please tell us, wht brought you here? we will be happy to help</label>
+      <label>What are your key words? (If multiple keywords, please separate them with a comma)</label>
+      <input type = "email" placeholder = "e.g. Sustainability, Construction, Architecture, Software, Estimates">
+      <label>Please tell us, what brought you here? we will be happy to help</label>
       <textarea placeholder = "What brought you here" textarea.style.textAlign = "left"></textarea>
-      <button type = "submit" class = "market">Send</button>
+      <button type = "submit" class = "bottom_button">Send</button>
+      <button onclick="showSection('home')" type = "submit" class = "bottom_button">Home</button>
       </form>
       `;
       break;
       
     case 'revit':
-      body.style.background = "#2d2e4e";
+      body.style.background = "#9194ed";
       content.innerHTML = `
         <h2>Revit - BIM</h2>
         <p>Our expertise in Building Information Modeling (BIM) allows for precision, collaboration, and efficiency.</p>
+        <div>
+        <button onclick="showSection('about')" type = "submit" class = "bottom_button">Let's talk!</button>
+        <button onclick="showSection('home')" type = "submit" class = "bottom_button">Home</button>
+        </div>
       `;
       break;
 
@@ -78,19 +92,30 @@ function showSection(section) {
         <p></p>
         <img src="Diapositiva1.JPG" alt="Construction work">
         <p></p>
+        <div>
+        <button type = "button" class = "tutorial">Watch Tutorial Here</button>
         <button type = "button" class = "market">Buy</button>
+        </div>
         <p></p>
         <h2>Set Detail Numbers Automatically In A Single Sheet</h2>
         <p></p>
         <img src="Diapositiva2.JPG" alt="Construction work">
         <p></p>
+        <div>
+        <button type = "button" class = "tutorial">Watch Tutorial Here</button>
         <button type = "button" class = "market">Buy</button>
+        </div>
         <p></p>
         <h2>Name Elevations Automatically</h2>
         <p></p>
         <img src= "Diapositiva3.JPG" alt="Revit project">
         <p></p>
+        <div>
+        <button type = "button" class = "tutorial">Watch Tutorial Here</button>
         <button type = "button" class = "market">Buy</button>
+        </div>
+        <button onclick="showSection('about')" type = "submit" class = "bottom_button">Let's talk!</button>
+        <button onclick="showSection('home')" type = "submit" class = "bottom_button">Home</button>
         <p></p>
       `;
       break;
@@ -98,11 +123,28 @@ function showSection(section) {
     case 'bioclimatic':
       body.style.background = "#416b3e";
       content.innerHTML = `
-        <h2>Sustainable housing</h2>
-        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
+        <h2>Sustainable housing based on some main principles</h2>
         <img src="PSICOMETRIC-CHART.jpeg" alt="Bioclimatic house">
+        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
+        <h2>Thermal Comfort</h2>
+        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
+        <h2>Passive Dessing</h2>
+        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
+        <h2>Water</h2>
+        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
+        <h2>Energy</h2>
+        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
+        <h2>Materials</h2>
+        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
+        <h2>Green</h2>
+        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
+        <div>
+        <button onclick="showSection('about')" type = "submit" class = "bottom_button">Let's talk!</button>
+        <button onclick="showSection('home')" type = "submit" class = "bottom_button">Home</button>
+        </div>
       `;
       break;
     
   }
+
 }

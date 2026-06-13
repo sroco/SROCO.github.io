@@ -19,13 +19,18 @@ body {
 
 .profile-img {
   display: block;
-  margin: 12px auto;
+  margin: 12px;
   width: clamp(100px, 18vw, 160px);   /* responsive size */
   height: clamp(100px, 18vw, 160px);  /* keep same as width for a perfect circle */
   border-radius: 100%;                 /* full circle */
   object-fit: cover;                  /* crop to fill the box */
   box-shadow: 0 6px 18px rgba(0,0,0,0.45);
   border: 3px solid rgba(255,255,255,0.12);
+  
+}
+
+.ROCO-img {
+  margin-top: 10%;
 }
 
 .menu button {
@@ -62,6 +67,12 @@ h1 {
 
 .content h2 {
   margin-top: 0;
+  color:#ffffff
+}
+
+h2 {
+  margin-top: 30px;
+  color:#000000
 }
 
 .content img {
@@ -71,18 +82,28 @@ h1 {
 }
 
 input {
-  width: 100%;
-  padding-bottom: 30px;
+  width: 50%;
   border-radius: 10px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  font: 100;
+  font-family: Arial;
   text-align: left;
   display:block;
 }
 
 textarea {
-  width: 100%;
-  padding-bottom: 250px;
+  width: 95%;
+  height: 200px;
   margin-bottom: 40px;
   border-radius: 10px;
+  padding-left: 1%;
+  padding-right: 1%;
+  font: 100;
+  font-family: Arial;
+  padding-top: 1%;
   text-align: left;
   resize:none;
   display:block;
@@ -95,7 +116,7 @@ label {
   display:block;
 }
 
-.market {
+.form_button {
  background: rgba(0,0,0,0.6);
   border: none;
   color: #fff;
@@ -108,4 +129,91 @@ label {
   margin-left: 25%;
   margin-right: 25%;
   margin-bottom: 30px;
+}
+
+.form_button:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+.market {
+ background: rgba(0, 229, 255, 0.541);
+  border: none;
+  color: #ffffff;
+  display : inline;
+  width: clamp(10px, 30vw, 150px); 
+  height: clamp(10px, 150px, 30px); 
+  margin-left: clamp(5px, 125px, 300px);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 30px;
+}
+
+.market:hover {
+  background: rgb(255, 255, 255);
+  color: #000000;
+}
+
+.tutorial {
+ background: rgba(5, 236, 252, 0.82);
+  border: none;
+  color: #000000;
+  display : inline;
+  width: clamp(100px, 70vw, 300px); 
+  height: clamp(10px, 10vw, 30px); 
+  margin-left: clamp(10px, 10vw, 70px);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 30px;
+}
+
+.tutorial:hover {
+  background: rgb(255, 255, 255);
+}
+
+.bottom_button {
+ background: rgba(0,0,0,0.6);
+  border: none;
+  color: #fff;
+  display : inline;
+  padding: 10px 20%;
+  margin: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.bottom_button:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+.social_media {
+  display : inline-block;
+  width: 70px;
+  height: 70px;
+  border: none;
+  background-color: #ffffff00;
+  margin-top: 20%;
+  margin-bottom: 5%;
+}
+
+.social_media:hover {
+  background-color: #0000004c;
+}
+
+.image_media{
+  display : inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+.about_me{
+  border-radius: 2.5%;    
+  background-color: #355974;
+  text-align: left;
+  padding: 50px;
+  margin-bottom: 10%;
 }
