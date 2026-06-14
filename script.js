@@ -49,18 +49,18 @@ function showSection(section) {
         <h2>Hey there!</h2>
         <p>In ROCO we are please to help you find the best ways to solve any issue or improvement possibility you have in your compay workflow.
         let us know from you! And we will be happy to help</p>
-        <form>
+        <form action ="https://script.google.com/macros/s/AKfycbyfuVEfxja-EoYsAtAlJe0bukNUgl48GJPtkfnTVLV4aThp-5VmM3-MBxtlGPRydI8_/exec" method = "POST">
         <label>Please tell us your full name</label>
-      <input type = "text" placeholder = "Your name">
-      <label>Please give us an email so we can contact you</label>
-      <input type = "email" placeholder = "Insert your email">
-      <label>What are your key words? (If multiple keywords, please separate them with a comma)</label>
-      <input type = "email" placeholder = "e.g. Sustainability, Construction, Architecture, Software, Estimates">
-      <label>Please tell us, what brought you here? we will be happy to help</label>
-      <textarea placeholder = "What brought you here" textarea.style.textAlign = "left"></textarea>
-      <button type = "submit" class = "bottom_button">Send</button>
-      <button onclick="showSection('home')" type = "submit" class = "bottom_button">Home</button>
-      </form>
+        <input type = "text" name = "fullname" placeholder = "Your name">
+        <label>Please give us an email so we can contact you</label>
+        <input type = "email" name = "email" placeholder = "Insert your email">
+        <label>What are your key words? (If multiple keywords, please separate them with a comma)</label>
+        <input type = "text" name = "keywords" placeholder = "e.g. Sustainability, Construction, Architecture, Software, Estimates">
+        <label>Please tell us, what brought you here? we will be happy to help</label>
+        <textarea name = "message" placeholder = "What brought you here"></textarea>
+        <button type = "submit" class = "bottom_button">Send</button>
+        <button onclick="showSection('home')" type = "submit" class = "bottom_button">Home</button>
+        </form>
       `;
       break;
       
