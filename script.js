@@ -47,11 +47,11 @@ function showSection(section) {
       body.style.background = "#959f89";
       content.innerHTML = `
         <h2>Hey there!</h2>
-        <p>In ROCO we are please to help you find the best ways to solve any issue or improvement possibility you have in your compay workflow.
-        let us know from you! And we will be happy to help</p>
-        <form action ="https://script.google.com/macros/s/AKfycbyfuVEfxja-EoYsAtAlJe0bukNUgl48GJPtkfnTVLV4aThp-5VmM3-MBxtlGPRydI8_/exec" method = "POST">
+        <p>In ROCO we are pleased to help you find the best ways to solve any issue or improvement possibility you have in your company workflow.
+        let us know from you! And we will be happy to help.</p>
+        <form id="contactForm" action ="https://script.google.com/macros/s/AKfycbyfuVEfxja-EoYsAtAlJe0bukNUgl48GJPtkfnTVLV4aThp-5VmM3-MBxtlGPRydI8_/exec" method = "POST">
         <label>Please tell us your full name</label>
-        <input type = "text" name = "fullname" placeholder = "Your name">
+        <input type = "text" name = "fullname" placeholder = "please enter your full name">
         <label>Please give us an email so we can contact you</label>
         <input type = "email" name = "email" placeholder = "Insert your email">
         <label>What are your key words? (If multiple keywords, please separate them with a comma)</label>
@@ -61,7 +61,27 @@ function showSection(section) {
         <button type = "submit" class = "bottom_button">Send</button>
         <button onclick="showSection('home')" type = "submit" class = "bottom_button">Home</button>
         </form>
-      `;
+      `  ;
+      const form = document.getElementById("contactForm")
+      
+      form.addEventListener("submit",(event)=>{
+        event.preventDefault();
+        const formData = new FormData(form);
+        fetch(form.action, {
+          method: "POST",
+          body: formData,
+          mode: "no-cors"
+      })
+      .then (() => {
+        content.innerHTML = `
+        <div class =  thank_you>
+        <h2>THANK YOU FOR REACHING OUT TO US</h2>
+        <p> We will be contacting you as soon as possible, please check the message we will be sending to your email so we can keep in touch!</p>
+        <button onclick="showSection('about')" type = "submit" class = "bottom_button">Tell us something else</button>
+        </div>  
+        ` ;
+      });
+      });
       break;
       
     case 'revit':

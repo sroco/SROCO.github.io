@@ -217,3 +217,11 @@ label {
   padding: 50px;
   margin-bottom: 10%;
 }
+
+.thank_you{
+  border-radius: 2.5%;    
+  background-color: #000000a1;
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 10%;
+}
