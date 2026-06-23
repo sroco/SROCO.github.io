@@ -16,7 +16,7 @@ function showSection(section) {
       content.innerHTML = `
         <div class = about_me>
         <h2>Hey there! Let me introduce myself first</h2>
-        <img src="selfie.jpeg" alt="Selfie of Santiago Rodríguez" class="profile-img">
+        <!--<img src="selfie.jpeg" alt="Selfie of Santiago Rodríguez" class="profile-img">-->
         <p>I'm Santiago Rodriguez. An architect based in Colombia with over 5 years experience in different fields within 
         the AEC industry and BIM specialist with 5 years of experience delivering residential, healthcare, and hospitality projects. Proficient in BIM 
         coordination and documentation using Revit, Dynamo, and Navisworks, with additional experience in Python for workflow automation 
