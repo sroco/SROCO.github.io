@@ -25,17 +25,27 @@ function showSection(section) {
         <p>Experienced working on architectural projects in the United States and Canada, supporting consultant coordination and design 
         development across project phases.
         </p> 
+        </div>
+        <div>  
+        <h2>Parametric Bridge</h2>
+        <p>Explore our selected projects showcasing innovation, design, and sustainability.</p>
+        <img src="PARAMETRIC_BRIDGE.png" alt="Portfolio project">
         </div>  
-
+        <div>  
         <h2>Casa Fátima</h2>
         <p>Explore our selected projects showcasing innovation, design, and sustainability.</p>
-        <img src="FÁTIMA_1.png" alt="Portfolio project">
+        <img src="CASA_FATIMA_RENDER_GRIS.png" alt="Portfolio project">
+        </div>
+        <div>    
         <h2>Nido del halcón</h2>
         <p>Explore our selected projects showcasing innovation, design, and sustainability.</p>
         <img src="ROCO_LOGO_B-T.png" alt="Portfolio project">
+        </div> 
+        <div>  
         <h2>Conjunto Cova de Iria</h2>
         <p>Explore our selected projects showcasing innovation, design, and sustainability.</p>
         <img src="ROCO_LOGO_B-T.png" alt="Portfolio project">
+        </div>  
         <div>
         <button onclick="showSection('about')" type = "submit" class = "bottom_button">Let's talk!</button>
         <button onclick="showSection('home')" type = "submit" class = "bottom_button">Home</button>
@@ -144,24 +154,56 @@ function showSection(section) {
       body.style.background = "#416b3e";
       content.innerHTML = `
         <h2>Sustainable housing based on some main principles</h2>
+        <div class = center_image>
         <img src="PSICOMETRIC-CHART.jpeg" alt="Bioclimatic house">
-        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
-        <h2>Thermal Comfort</h2>
-        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
-        <h2>Passive Dessing</h2>
-        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
-        <h2>Water</h2>
-        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
-        <h2>Energy</h2>
-        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
-        <h2>Materials</h2>
-        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
-        <h2>Green</h2>
-        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
+        </div>
+        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency. We understand that today the needs for properly inhabiting spaces are shaped by higher standards. So, we always bear them in mind when dealing with our projects.</p>
+        <p>next, you will find an assortment of variables we bear in mind when dealing with each of our projects, our priorities:</p>
         <div>
+        <div class = thermal_comfort>
+        <h2>Thermal Comfort</h2>
+        <div class = center_image>
+        <img src="MAN.png" class="ROCO-img" alt="Bioclimatic house">
+        </div>
+        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
+        </div>
+        <div class = passive_desing>
+        <h2>Passive Desing</h2>
+        <div class = center_image>
+        <img src="WOMAN.png" class="ROCO-img" alt="Bioclimatic house">
+        </div>
+        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
+        </div>
+        <div class = water>
+        <h2>Water</h2>
+        <div class = center_image>
+        <img src="MAN.png" class="ROCO-img" alt="Bioclimatic house">
+        </div>
+        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
+        </div>
+        <div class = energy>
+        <h2>Energy</h2>
+        <div class = center_image>
+        <img src="WOMAN.png" class="ROCO-img" alt="Bioclimatic house">
+        </div>
+        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
+        </div>
+        <div class = materials>
+        <h2>Materials</h2>
+        <div class = center_image>
+        <img src="MAN.png" class="ROCO-img" alt="Bioclimatic house">
+        </div>
+        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
+        </div>
+        <div class = green>
+        <h2>Green</h2>
+        <div class = center_image>
+        <img src="WOMAN.png" class="ROCO-img" alt="Bioclimatic house">
+        </div>
+        <p>Bioclimatic housing designed to harmonize with the environment while ensuring comfort and efficiency.</p>
+        </div>
         <button onclick="showSection('about')" type = "submit" class = "bottom_button">Let's talk!</button>
         <button onclick="showSection('home')" type = "submit" class = "bottom_button">Home</button>
-        </div>
       `;
       break;
     
